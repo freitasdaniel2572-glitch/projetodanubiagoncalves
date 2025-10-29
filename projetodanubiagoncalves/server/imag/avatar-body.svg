@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="avatarBodySVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" width="240" height="320" role="img" aria-hidden="false">
+  <!-- corpo (tronco / jaleco) -->
+  <g id="bodyGroup">
+    <rect x="44" y="92" rx="18" ry="18" width="152" height="140" fill="#ffdff0"/>
+    <!-- detalhe sombra leve -->
+    <rect x="44" y="122" rx="12" ry="12" width="152" height="96" fill="#ffd0e3" opacity="0.6"/>
+    <!-- gola -->
+    <path d="M88 92 q12 -16 32 -16 q20 0 32 16" fill="#fff"/>
+    <!-- bolso -->
+    <rect x="60" y="150" width="36" height="28" rx="6" fill="#fff0f4" opacity="0.9"/>
+    <rect x="144" y="150" width="36" height="28" rx="6" fill="#fff0f4" opacity="0.9"/>
+  </g>
+
+  <!-- braço esquerdo (estático) -->
+  <g id="armLeft" transform="translate(0,0)">
+    <path d="M64 118 q-30 20 -22 52 q10 40 36 28" stroke="#f6c6d0" stroke-width="12" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- braço direito (separado, animável) -->
+  <!-- group usado para rotacionar ao redor do ombro -->
+  <g id="armRightGroup" transform="translate(0,0)" style="transform-origin: 170px 120px;">
+    <!-- braço (path) -->
+    <path id="armRight" d="M176 118 q40 18 34 50 q-8 36 -32 30" stroke="#f6c6d0" stroke-width="12" stroke-linecap="round" fill="none" />
+    <!-- mão (círculo) -->
+    <circle cx="178" cy="196" r="6" fill="#f6c6d0" />
+  </g>
+
+  <!-- pequeno destaque / sombra sobre o tronco -->
+  <ellipse cx="120" cy="206" rx="38" ry="8" fill="#000" opacity="0.03"/>
+</svg>

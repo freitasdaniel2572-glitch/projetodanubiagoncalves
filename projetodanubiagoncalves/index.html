@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Studio Danúbia Gonçalves — Estética de Alto Padrão</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Studio Danúbia Gonçalves — estética facial e corporal de alto padrão. Agende seu atendimento personalizado e eleve sua autoestima.">
+  <link rel="canonical" href="https://www.seusite.com/">
+
+  <!-- Open Graph (compartilhamento social) -->
+  <meta property="og:site_name" content="Studio Danúbia Gonçalves">
+  <meta property="og:title" content="Studio Danúbia Gonçalves — Estética de Alto Padrão">
+  <meta property="og:description" content="Especialista em estética facial e corporal. Atendimento humanizado e resultados incríveis.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Imag/img-danubia-1200.webp">
+  <meta property="og:url" content="https://www.seusite.com/">
+
+  <!-- Preconnect / Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Ícone do site -->
+  <link rel="icon" href="./server/imag/img danubia.jpeg" type="image/png" 
+
+  <!-- Estilos: certifique-se que o arquivo se chama style.css e está no mesmo diretório -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD (estrutura básica de negócio/local) - corretamente fechado -->
+  <script type="application/ld+json">
+
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Studio Danúbia Gonçalves",
+    "description": "Estética facial e corporal de alto padrão — atendimento humanizado.",
+    "url": "https://www.seusite.com/",
+    "telephone": "+55-53-99959-8364",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Exemplo, 123",
+      "addressLocality": "Pelotas",
+      "addressRegion": "RS",
+      "postalCode": "96000-000",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+
+  <style>
+    /* Pequenas melhorias visuais para garantir foco acessível mesmo sem o arquivo CSS externo */
+    :focus { outline: 3px solid #ffb6c1; outline-offset: 2px; }
+    a.skip-link { position: absolute; top: -40px; left: 8px; background:#000; color:#fff; padding:8px 12px; z-index:999; transition: top .2s; }
+    a.skip-link:focus { top: 8px; }
+    .cursor { position: fixed; left: 0; top: 0; width: 18px; height: 18px; border-radius: 50%; transform: translate(-50%,-50%); pointer-events: none; z-index: 9999; mix-blend-mode: difference; transition: transform .08s ease, background-color .12s ease; background: rgba(0,0,0,.85); }
+    @media (hover: none), (pointer: coarse) { .cursor { display:none; } }
+    @media (prefers-reduced-motion: reduce) { * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; } }
+  </style>
+</head>
+
+<body>
+  <!-- Link de pular para conteúdo (acessibilidade) -->
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <!-- CURSOR PERSONALIZADO -->
+  
+
+  <!-- CABEÇALHO / NAV -->
+  <header class="header" role="banner">
+    <div class="header-content container">
+      <a href="#home" class="logo-link" aria-label="Ir para o início">
+        <img src="./server/imag/img danubia B.jpeg" alt="Logo Studio Danúbia Gonçalves" class="logo" width="140">
+      </a>
+
+      <nav class="menu" role="navigation" aria-label="Menu principal">
+        <button id="navToggle" aria-expanded="false" aria-controls="primaryNav" class="nav-toggle" aria-label="Abrir menu">☰</button>
+        <ul id="primaryNav" class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#agendamento">Agendamento</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO: LCP (carregar eager para melhor desempenho) -->
+  <main id="main" class="main" role="main">
+    <section id="home" class="hero reveal" aria-labelledby="hero-title">
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <h1 id="hero-title">Studio <span>Danúbia Gonçalves</span></h1>
+          <p class="lead">Beleza, bem-estar e autoestima em um ambiente de sofisticação. Cuide-se com quem entende de estética de alto padrão.</p>
+          <p>
+            <a href="#agendamento" class="btn btn-primary">Agendar horário</a>
+            <a href="#servicos" class="btn btn-outline">Ver serviços</a>
+          </p>
+        </div>
+
+        <div class="hero-photo-wrapper" aria-hidden="false">
+          <picture>
+            <source srcset="Imag/img-danubia-1600.webp 1600w, Imag/img-danubia-1200.webp 1200w, Imag/img-danubia-800.webp 800w" type="image/webp">
+            <source srcset="Imag/img-danubia-1600.jpg 1600w, Imag/img-danubia-1200.jpg 1200w, Imag/img-danubia-800.jpg 800w" type="image/jpeg">
+           <img src="./server/imag/img danubia.jpeg" alt="Danúbia Gonçalves no studio" class="hero-photo" loading="eager" decoding="sync" width="1200">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVATAR INTERATIVO -->
+    <section class="avatar-section reveal" aria-labelledby="avatar-title">
+      <div class="container">
+        <h2 id="avatar-title" class="visually-hidden">Avatar interativo</h2>
+
+        <div class="avatar-3d" id="avatar3d" tabindex="0" aria-label="Avatar interativo de Danúbia" role="button">
+          <div class="avatar-card" id="avatarCard" aria-hidden="false">
+            <div class="avatar-body-wrap">
+              <picture>
+                <source srcset="Imag/avatar-body.webp" type="image/webp">
+                <img src="./server/imag/avatar-body.svg" alt="" class="avatar-body-img" aria-hidden="true" decoding="async">
+              </picture>
+            </div>
+
+            <div class="avatar-face" aria-hidden="true">
+              <img src="./server/imag/avatar danubia.png" alt="Rosto estilizado de Danúbia" loading="lazy">
+            </div>
+
+            <div class="avatar-badge">Danúbia</div>
+          </div>
+
+        
+          <!-- Modal com bio (inicialmente oculto) -->
+          <div class="avatar-modal" id="avatarModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle" tabindex="-1">
+            <div class="avatar-modal-inner" role="document">
+              <button class="modal-close" id="modalClose" aria-label="Fechar">✕</button>
+              <h3 id="modalTitle">Danúbia Gonçalves</h3>
+              <p>Especialista em estética facial e corporal. Atendimento humanizado e resultados incríveis.</p>
+              <p><a href="#agendamento" class="btn btn-small">Agendar agora</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section reveal" aria-labelledby="sobre-title">
+      <div class="container">
+        <h2 id="sobre-title">Sobre o Studio</h2>
+        <p>O Studio Danúbia Gonçalves é um espaço dedicado à estética avançada, unindo tecnologia, elegância e cuidado individualizado para realçar sua beleza natural.</p>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section reveal" aria-labelledby="servicos-title">
+      <div class="container">
+        <h2 id="servicos-title">Nossos Serviços</h2>
+        <div class="services" role="list">
+          <article class="service-card" role="listitem" aria-labelledby="s1">
+            <img src="./server/imag/foto limpesa de pele.png" alt="Limpeza de pele" loading="lazy" width="480">
+            <h3 id="s1">Limpeza de Pele</h3>
+            <p>Revitalize e purifique sua pele com técnicas exclusivas e produtos premium.</p>
+          </article>
+
+          <article class="service-card" role="listitem" aria-labelledby="s2">
+            <img src="./server/imag/foto hidrataçao.png" alt="Hidratação facial" loading="lazy" width="480">
+            <h3 id="s2">Hidratação Facial</h3>
+            <p>Proporcione nutrição profunda e brilho natural à sua pele.</p>
+          </article>
+
+          <article class="service-card" role="listitem" aria-labelledby="s3">
+            <img src="./server/imag/foto depilação.png" alt="Depilação" loading="lazy" width="480">
+            <h3 id="s3">Depilação</h3>
+            <p>Experiência delicada, com técnicas modernas e resultados duradouros.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO -->
+    <section id="agendamento" class="section reveal" aria-labelledby="agendamento-title">
+      <div class="container">
+        <h2 id="agendamento-title">Agende seu horário</h2>
+        <p>Preencha o formulário abaixo e entraremos em contato para confirmar seu atendimento.</p>
+
+        <form id="bookingForm" class="booking-form" action="#" method="post" autocomplete="on" novalidate>
+          <div class="form-grid">
+            <label for="name">Nome completo</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="phone">Telefone / WhatsApp</label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+55 (..) ....-...." required>
+
+            <label for="service">Serviço desejado</label>
+            <select id="service" name="service" required>
+              <option value="">Selecione...</option>
+              <option>Limpeza de Pele</option>
+              <option>Hidratação Facial</option>
+              <option>Depilação</option>
+            </select>
+
+            <label for="date">Data preferencial</label>
+            <input id="date" name="date" type="date">
+
+            <label for="message">Mensagem / Observações</label>
+            <textarea id="message" name="message" rows="4" placeholder="Informações relevantes..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Enviar solicitação</button>
+            <button type="button" id="bookWhats" class="btn btn-outline">Agendar via WhatsApp</button>
+          </div>
+
+          <p class="form-note">Ao enviar, você concorda em ser contatado para confirmação do agendamento.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contact reveal" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title">Contato</h2>
+        <p>Entre em contato e descubra como podemos transformar sua autoestima.</p>
+        <div class="contact-links">
+          <a href="https://wa.me/5553999598364" target="_blank" rel="noopener" class="social-btn whatsapp">
+            <img src="./server/imag/img-whatsapp.jpeg" alt="" aria-hidden="true"> <span>WhatsApp</span>
+          </a>
+
+          <a href="https://www.instagram.com/danubiagoncalves_" target="_blank" rel="noopener" class="social-btn instagram">
+            <img src="./server/imag/img-instagram.jpeg" alt="" aria-hidden="true"> <span>Instagram</span>
+          </a>
+
+          <a href="tel:+5553999598364" class="social-btn phone">Ligar:+55 53 99959-8364</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="map reveal" aria-label="Localização">
+      <div class="container">
+        <iframe title="Localização Studio Danúbia Gonçalves" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.9559245292685!2d-56.554485025519675!3d-29.1413375899859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94545e2d3866477b%3A0x4b9e8f1e2e59c9e0!2sR.%20Visc.%20de%20Mau%C3%A1%2C%202463%20-%20Ch%C3%A1cara%2C%20Itaqui%20-%20RS%2C%2097650-000!5e1!3m2!1spt-BR!2sbr!4v1761689838146!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></>" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> Studio Danúbia Gonçalves — Todos os direitos reservados.</p>
+     <!-- trecho para substituir no rodapé -->
+<p class="small">
+  Desenvolvido por 
+  <a class="dev-link" href="https://Daniux.com.br" target="_blank" rel="noopener noreferrer">Daniux.com.br</a>
+</p>
+
+<!-- botão que abrirá o WhatsApp (ou qualquer link que você quiser) -->
+<button id="contatoBtn" type="button" aria-label="Entrar em contato via WhatsApp" data-whats="https://wa.me/qr/DJS7PIYX3BZNB1">
+  Contato
+</button>
+
+        
+      </body>
+    </div>
+  </footer>
+
+  <!-- Mensagem para usuários com JavaScript desativado -->
+  <noscript>
+    <div class="no-js-warning" role="alert">Este site funciona melhor com JavaScript ativado. Algumas funcionalidades (menu, modal, formulário) não estarão disponíveis.</div>
+  </noscript>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Atualiza ano no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* MENU RESPONSIVO */
+    (function () {
+      const navToggle = document.getElementById('navToggle');
+      const primaryNav = document.getElementById('primaryNav');
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        primaryNav.classList.toggle('open');
+      });
+      primaryNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        navToggle.setAttribute('aria-expanded', 'false');
+        primaryNav.classList.remove('open');
+      }));
+    })();
+
+    /* AVATAR MODAL */
+    (function () {
+      const avatar = document.getElementById('avatar3d');
+      const modal = document.getElementById('avatarModal');
+      const closeBtn = document.getElementById('modalClose');
+      let lastFocus = null;
+
+      function openModal() {
+        lastFocus = document.activeElement;
+        modal.setAttribute('aria-hidden', 'false');
+        modal.style.display = 'block';
+        closeBtn.focus();
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.setAttribute('aria-hidden', 'true');
+        modal.style.display = 'none';
+        if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+        document.body.style.overflow = '';
+      }
+
+      avatar.addEventListener('click', openModal);
+      avatar.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(); } });
+      closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') closeModal(); });
+    })();
+
+    /* REVEAL ON SCROLL */
+    (function () {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    })();
+
+    /* CURSOR PERSONALIZADO */
+    (function () {
+      const cursor = document.querySelector('.cursor');
+      if (!cursor) return;
+      document.addEventListener('mousemove', (e) => { cursor.style.left = e.clientX + 'px'; cursor.style.top = e.clientY + 'px'; });
+      document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => { cursor.style.transform = 'translate(-50%,-50%) scale(1.8)'; });
+        el.addEventListener('mouseleave', () => { cursor.style.transform = 'translate(-50%,-50%) scale(1)'; });
+      });
+    })();
+
+    /* FORMULÁRIO E WHATSAPP */
+    (function () {
+      const form = document.getElementById('bookingForm');
+      const whatsBtn = document.getElementById('bookWhats');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        const data = {
+          name: form.name.value.trim(),
+          email: form.email.value.trim(),
+          phone: form.phone.value.trim(),
+          service: form.service.value,
+          date: form.date.value,
+          message: form.message.value.trim()
+        };
+        const subject = encodeURIComponent('Pedido de agendamento - ' + data.name);
+        const body = encodeURIComponent(`Nome: ${data.name}\nEmail: ${data.email}\nTelefone: ${data.phone}\nServiço: ${data.service}\nData preferencial: ${data.date}\nMensagem: ${data.message}`);
+        window.location.href = `mailto:contato@seusite.com?subject=${subject}&body=${body}`;
+      });
+
+      whatsBtn.addEventListener('click', () => {
+        const name = encodeURIComponent(form.name.value || 'Olá');
+        const service = encodeURIComponent(form.service.value || 'Informações sobre serviços');
+        const phone = '5553999598364';
+        const text = encodeURIComponent(`Olá, meu nome é ${name}. Gostaria de agendar: ${service}.`);
+        window.open(`https://wa.me/${phone}?text=${text}`, '_blank', 'noopener');
+      });
+    })();
+  </script>
+<script>
+  (function () {
+    const contatoBtn = document.getElementById('contatoBtn');
+    if (!contatoBtn) return;
+
+    // Puxa o link do atributo data-whats (ou usa fallback se quiser)
+    const whatsUrl = contatoBtn.dataset.whats || 'https://wa.me/5553999598364';
+
+    function openWhatsApp() {
+      // abre em nova aba de forma segura
+      window.open(whatsUrl, '_blank', 'noopener');
+    }
+
+    contatoBtn.addEventListener('click', openWhatsApp);
+
+    // suporte teclado: Enter / Space
+    contatoBtn.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openWhatsApp();
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
