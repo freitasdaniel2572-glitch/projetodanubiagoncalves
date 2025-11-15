@@ -84,7 +84,7 @@ img { max-width: 100%; display: block; height: auto; }
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
 }
 
 .header-content {
@@ -95,7 +95,7 @@ img { max-width: 100%; display: block; height: auto; }
   padding: 14px 0;
 }
 
-.logo { width: 140px; height: auto; display: block; }
+.logo { width: 200px; height: auto; display: block; }
 
 /* Nav */
 .nav-list,
@@ -164,7 +164,7 @@ img { max-width: 100%; display: block; height: auto; }
 
 .hero-photo {
   width: 100%;
-  max-width: 640px;
+  max-width: 180px;
   border-radius: var(--radius);
   object-fit: cover;
   box-shadow: 0 12px 30px rgba(0,0,0,0.18);
